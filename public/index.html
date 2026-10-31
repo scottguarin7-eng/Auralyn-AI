@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Auralyn — Intelligence, beautifully in motion."
+    />
+    <meta name="theme-color" content="#070912" />
+    <title>Auralyn — Intelligence, beautifully in motion.</title>
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+    <div class="aurora aurora-left"></div>
+    <div class="aurora aurora-right"></div>
+    <div class="noise"></div>
+
+    <button class="mobile-menu glass-button" id="mobileMenuButton">
+      ☰
+    </button>
+
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-row">
+        <div class="brand-mark">✦</div>
+
+        <div class="brand-copy">
+          <strong>AURALYN</strong>
+          <span>INTELLIGENCE OS / 01</span>
+        </div>
+
+        <button class="sidebar-close glass-button" id="sidebarClose">
+          ×
+        </button>
+      </div>
+
+      <button class="new-session" id="newSessionButton">
+        <span>＋</span>
+        New Auralyn session
+        <small>⌘N</small>
+      </button>
+
+      <nav class="navigation">
+        <p class="nav-heading">Workspace</p>
+
+        <button class="nav-item active" data-workspace="Auralyn Chat">
+          <span>◈</span>
+          Auralyn Chat
+        </button>
+
+        <button class="nav-item" data-workspace="Projects">
+          <span>▦</span>
+          Projects
+        </button>
+
+        <button class="nav-item" data-workspace="Prompt Lab">
+          <span>✧</span>
+          Prompt Lab
+        </button>
+
+        <button class="nav-item" data-workspace="Knowledge Vault">
+          <span>▤</span>
+          Knowledge Vault
+        </button>
+
+        <button class="nav-item" data-workspace="Developer Console">
+          <span>⌘</span>
+          Developer Console
+        </button>
+
+        <p class="nav-heading recent-heading">Recent signals</p>
+
+        <button class="recent-signal">
+          <i class="signal-dot dot-blue"></i>
+          Future of human-AI teams
+        </button>
+
+        <button class="recent-signal">
+          <i class="signal-dot dot-violet"></i>
+          Neural study planner
+        </button>
+
+        <button class="recent-signal">
+          <i class="signal-dot dot-green"></i>
+          Build a SaaS interface
+        </button>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="core-status">
+          <span class="pulse"></span>
+          <div>
+            <strong>Auralyn core online</strong>
+            <span>All systems nominal</span>
+          </div>
+        </div>
+
+        <button class="profile-card">
+          <span class="profile-icon">◉</span>
+          <span class="profile-copy">
+            <strong>Explorer mode</strong>
+            <small>Local workspace</small>
+          </span>
+          <span>•••</span>
+        </button>
+      </div>
+    </aside>
+
+    <main class="content">
+      <header class="topbar">
+        <div class="breadcrumb">
+          <span>Workspace</span>
+          <b>/</b>
+          <strong id="workspaceName">Auralyn Chat</strong>
+        </div>
+
+        <div class="top-actions">
+          <div class="online-pill">
+            <span class="pulse"></span>
+            Auralyn online
+          </div>
+
+          <button class="top-icon" id="focusButton">⌘</button>
+          <button class="top-icon" id="themeButton">☾</button>
+          <button class="profile-icon top-profile">◉</button>
+        </div>
+      </header>
+
+      <div class="dashboard">
+        <section class="main-column">
+          <div class="hero">
+            <div>
+              <p class="eyebrow">✧ AURALYN INTELLIGENCE CONSOLE</p>
+
+              <h1>
+                Intelligence,
+                <span>beautifully in motion.</span>
+              </h1>
+
+              <p class="hero-copy">
+                A living AI workspace for ideas, research, code, and
+                high-velocity creation.
+              </p>
+            </div>
+
+            <div class="hero-buttons">
+              <button class="secondary-button" id="clearButton">
+                Clear
+              </button>
+
+              <button class="secondary-button">
+                Configure
+              </button>
+            </div>
+          </div>
+
+          <div class="metrics">
+            <div class="metric glass-panel">
+              <div class="metric-icon blue">◌</div>
+              <div>
+                <span>Auralyn activity</span>
+                <strong>98.4%</strong>
+                <small>Optimal</small>
+              </div>
+            </div>
+
+            <div class="metric glass-panel">
+              <div class="metric-icon violet">ϟ</div>
+              <div>
+                <span>Response latency</span>
+                <strong>0.8s</strong>
+                <small>Very fast</small>
+              </div>
+            </div>
+
+            <div class="metric glass-panel">
+              <div class="metric-icon green">◒</div>
+              <div>
+                <span>Context window</span>
+                <strong>12.8k</strong>
+                <small>Available</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="messages" id="messages">
+            <article class="message ai-message">
+              <div class="message-mark">✦</div>
+
+              <div class="message-body">
+                <div class="message-meta">
+                  <strong>Auralyn</strong>
+                  <span>ready</span>
+                </div>
+
+                <div class="message-text">
+                  Welcome to Auralyn. Your intelligence workspace is online.
+                  What are we building today?
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="quick-prompts">
+            <button class="quick-prompt">
+              ✧ Explain a difficult topic simply
+            </button>
+
+            <button class="quick-prompt">
+              ✧ Create a futuristic product idea
+            </button>
+
+            <button class="quick-prompt">
+              ✧ Help me study for an exam
+            </button>
+
+            <button class="quick-prompt">
+              ✧ Review and improve my code
+            </button>
+          </div>
+
+          <form class="composer glass-panel" id="chatForm">
+            <textarea
+              id="messageInput"
+              rows="2"
+              placeholder="Transmit a thought to Auralyn..."
+            ></textarea>
+
+            <div class="composer-footer">
+              <div class="composer-tools">
+                <button type="button" class="composer-tool">
+                  ⊕ Attach
+                </button>
+
+                <button type="button" class="composer-tool">
+                  ✧ Enhance
+                </button>
+
+                <span class="shortcut">⌘ Enter to send</span>
+              </div>
+
+              <button class="send-button" type="submit">
+                <span id="sendLabel">Transmit</span>
+                <span>➜</span>
+              </button>
+            </div>
+          </form>
+        </section>
+
+        <aside class="inspector">
+          <div class="inspector-title">
+            <div>
+              <p class="eyebrow">AURALYN INSPECTOR</p>
+              <h2>Fusion core</h2>
+            </div>
+
+            <div class="cpu-icon">⌁</div>
+          </div>
+
+          <div class="core-visual">
+            <div class="core-ring ring-a"></div>
+            <div class="core-ring ring-b"></div>
+            <div class="core-ring ring-c"></div>
+            <div class="core-center">✦</div>
+            <i class="orbit orbit-a"></i>
+            <i class="orbit orbit-b"></i>
+          </div>
+
+          <div class="engine-status">
+            <span class="pulse"></span>
+            <div>
+              <strong>Auralyn core active</strong>
+              <span>Primary intelligence channel</span>
+            </div>
+            <b>✓</b>
+          </div>
+
+          <div class="inspector-section">
+            <div class="section-label">
+              <span>Model parameters</span>
+              <button>⚙</button>
+            </div>
+
+            <label class="parameter-label">
+              <span>Temperature</span>
+              <strong id="temperatureValue">0.7</strong>
+            </label>
+
+            <input
+              class="temperature"
+              id="temperatureInput"
+              type="range"
+              min="0"
+              max="1"
+              step="0.1"
+              value="0.7"
+            />
+
+            <div class="temperature-scale">
+              <span>Precise</span>
+              <span>Creative</span>
+            </div>
+          </div>
+
+          <div class="inspector-section">
+            <div class="section-label">
+              <span>Active capabilities</span>
+              <b>08</b>
+            </div>
+
+            <div class="capability">
+              <i class="capability-dot blue"></i>
+              <span>Deep reasoning</span>
+              <b>✓</b>
+            </div>
+
+            <div class="capability">
+              <i class="capability-dot violet"></i>
+              <span>Creative synthesis</span>
+              <b>✓</b>
+            </div>
+
+            <div class="capability">
+              <i class="capability-dot green"></i>
+              <span>Code intelligence</span>
+              <b>✓</b>
+            </div>
+
+            <div class="capability">
+              <i class="capability-dot orange"></i>
+              <span>Context memory</span>
+              <b>✓</b>
+            </div>
+          </div>
+
+          <div class="activity-card">
+            <div class="activity-heading">
+              <span>Live activity</span>
+              <span>◌</span>
+            </div>
+
+            <div class="activity-bars">
+              <i style="height: 40%"></i>
+              <i style="height: 72%"></i>
+              <i style="height: 55%"></i>
+              <i style="height: 84%"></i>
+              <i style="height: 45%"></i>
+              <i style="height: 68%"></i>
+              <i style="height: 93%"></i>
+              <i style="height: 57%"></i>
+              <i style="height: 77%"></i>
+              <i style="height: 48%"></i>
+              <i style="height: 88%"></i>
+              <i style="height: 64%"></i>
+              <i style="height: 70%"></i>
+              <i style="height: 51%"></i>
+              <i style="height: 82%"></i>
+              <i style="height: 60%"></i>
+            </div>
+
+            <div class="activity-footer">
+              <span>Last 60 seconds</span>
+              <strong>+24.8%</strong>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
