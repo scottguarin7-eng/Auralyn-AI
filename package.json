@@ -1,0 +1,15 @@
+{
+  "name": "auralyn",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Auralyn — Intelligence, beautifully in motion.",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "express": "^5.1.0"
+  }
+}
